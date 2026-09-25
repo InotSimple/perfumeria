@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-sans: 'Nunito Sans', sans-serif; 
+
+    /* 1. Superficies y Fondos */
+    --color-background: #FFFFFF;       /* Marfil cálido del lienzo general */
+    --color-surface: #F4F5F9;          /* Tarjetas y contenedores */
+    --color-surface-subtle: #EDE8DD;   /* Secciones secundarias y fondos suaves */
+
+    /* 2. Tipografía */
+    --color-foreground: #232323;         /* Texto principal y títulos */
+    --color-muted: #343434;            /* Texto secundario, metadata y descripciones */
+
+
+
+    /* 3. Estados e Interacción */
+    --color-border: #DDD7CA;           /* Bordes cálidos y discretos */
+    --color-ring: #C9A253;             /* Focus visible dorado */
+    --color-success: #4F7A68;          /* Verde desaturado compatible con la paleta */
+    --color-warning: #D49A45;          /* Ámbar */
+    --color-danger: #B95752;           /* Rojo apagado */
+}
+
+@layer base {
+    body{
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+    }
+    p{
+        @apply mb-4;
+    }
+    p:last-child{
+        @apply mb-0;
+    }
+}
