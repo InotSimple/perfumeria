@@ -15,7 +15,7 @@ const ShopContent = () => {
     const { data = [], isPending } = useQuery<Shop[]>({
         queryKey: ["Shop"],
         queryFn: () =>
-            fetch("http://farid.alwaysdata.net/perfumes").then((r) => r.json()),
+            fetch("https://farid.alwaysdata.net/perfumes").then((r) => r.json()),
     });
 
     return (
