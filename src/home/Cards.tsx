@@ -20,7 +20,7 @@ export const DATA_CATEGORIAS: CardsItem[] = [
   },
   {
     id: "p2",
-    foto: "/cards/perfumediseñador.webp",
+    foto: "/cards/perfumediseñador.jpg",
     palabra: "Chic",
     titulo: "Perfumes de Diseñador",
     colorPalabra: "text-[#F7BB98]",
@@ -32,7 +32,7 @@ export const DATA_CATEGORIAS: CardsItem[] = [
     palabra: "Único",
     titulo: "Perfumes de Nicho",
     colorPalabra: "text-[#E3CBBB]",
-    textoOscuro: true
+    textoOscuro: false
   }
 ]
 
@@ -53,7 +53,7 @@ export const Cards = () => {
           <span className="pointer-events-none absolute -left-6 -top-6 h-full w-full border border-foreground transition-all duration-500 group-hover:-left-3 group-hover:-top-3"></span>
 
           <div className="pointer-events-none absolute inset-0 flex flex-col justify-end pb-12 pl-8 pr-4 xl:pb-20 xl:pl-14">
-            <span className={`-mb-2 font-light text-2xl leading-none xl:text-7xl ${p.colorPalabra}`}>
+            <span className={`-mb-2 font-script text-2xl leading-none xl:text-9xl ${p.colorPalabra}`}>
               {p.palabra}
             </span>
             <span className={`text-xl xl:text-xl font-bold ${p.textoOscuro ? "text-foreground" : "text-white"}`}>

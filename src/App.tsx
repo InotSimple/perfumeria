@@ -4,6 +4,7 @@ import { Shop } from './home/Shop'
 import { Banner } from './home/Banner'
 import { Cards } from './home/Cards'
 import { MainHeader } from './layouts/MainHeader'
+import { MainFooter } from './layouts/MainFooter'
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
     <Cards />
 
     <Shop />
+
+    <MainFooter />
 
 
 
