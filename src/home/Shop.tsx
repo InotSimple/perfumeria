@@ -59,7 +59,7 @@ const ShopContent = () => {
                     <FontAwesomeIcon
                         key={i}
                         icon={i < Math.round(calificacion) ? faStarSolid : faStarRegular}
-                        className={i < Math.round(calificacion) ? "text-accent" : "text-border"}
+                        className={i < Math.round(calificacion) ? "text-yellow-300" : "text-border"}
                         size="sm"
                     />
                 ))}
